@@ -6,16 +6,15 @@
 /*   By: koseki.yusuke <koseki.yusuke@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 11:21:28 by koseki.yusu       #+#    #+#             */
-/*   Updated: 2024/09/16 11:21:29 by koseki.yusu      ###   ########.fr       */
+/*   Updated: 2024/10/24 10:01:42 by koseki.yusu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HUMANA_HPP
-#define HUMANA_HPP
+#pragma once
 
 #include <iostream>
 #include <string>
-#include "Weapon.hpp" // Weapon クラスのインクルード
+#include "Weapon.hpp"
 
 class HumanA {
 private:
@@ -26,5 +25,3 @@ public:
     HumanA(std::string name, Weapon& weapon);
     void attack();
 };
-
-#endif // HUMANA_HPP

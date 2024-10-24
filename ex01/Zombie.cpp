@@ -6,14 +6,13 @@
 /*   By: koseki.yusuke <koseki.yusuke@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/01 21:48:39 by koseki.yusu       #+#    #+#             */
-/*   Updated: 2024/09/02 23:17:46 by koseki.yusu      ###   ########.fr       */
+/*   Updated: 2024/10/24 09:57:52 by koseki.yusu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 #include <iostream>
 
-// Zombie::Zombie(std::string name) : name(name) {}
 Zombie::Zombie() {} 
 
 Zombie::~Zombie() {
@@ -30,7 +29,7 @@ void Zombie::announce() {
 
 Zombie* zombieHorde(int N, std::string name) {
     if (N <= 0) {
-        return nullptr;
+        return NULL;
     }
 
     Zombie* horde = new Zombie[N];
